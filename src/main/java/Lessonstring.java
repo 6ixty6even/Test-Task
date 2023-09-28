@@ -32,8 +32,8 @@ public final class Lessonstring {
 
         String s = new String("abcdefgabcd");
 
-        boolean b = s.contains("defg");// метод виводить true or false чи містить в собі стрінга стрінгу з параметру
-        System.out.println(b);
+        boolean b5 = s.contains("defg");// метод виводить true or false чи містить в собі стрінга стрінгу з параметру
+        System.out.println(b5);
 
         int a = s.length();//метод виводить кількість символів стрінги
         System.out.println(a);
@@ -73,11 +73,6 @@ public final class Lessonstring {
 
         System.out.println(s2.toLowerCase());//повертає всю стрінгу з маленькой букви
         System.out.println(s3.toUpperCase());//повертає всю стрінгу з великой букви
-
-
-
-
-
 
     }
 
