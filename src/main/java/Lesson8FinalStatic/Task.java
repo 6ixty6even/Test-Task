@@ -1,4 +1,4 @@
-package Lesson8;
+package Lesson8FinalStatic;
 
 public class Task {
     int $ = 5;

@@ -1,6 +1,8 @@
 import p1.p2.p3.C;
 
 public class Car {
+    static String s1 = "hello";
+    static StringBuilder s2 = new StringBuilder("1s");
     String color;
     String motor;
     int door;
@@ -24,6 +26,7 @@ class CarTest {
     }
 
     public static void main(String[] args) {
+
         Car car1 = new Car("blue", "v4", 4);
         Car car2 = new Car("white", "v12", 2);
 

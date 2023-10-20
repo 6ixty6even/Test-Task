@@ -1,6 +1,6 @@
-package Lesson9;
+package Lesson9ScopeofVariable;
 
-import Lesson8.*;
+import Lesson8FinalStatic.*;
 import java.lang.*;
 
 public class Some {

@@ -43,7 +43,7 @@ public final class Lessonstring {
         int i1 = s.indexOf('a');// Виводить індекс за вказаним символом 'a' або стрінгом "a"
         System.out.println(i1);
 
-        int i2 = s.indexOf('a', 5);// шукає символ 'а' або стрінги "a" з 5 індекса
+        int i2 = s.indexOf('a', 5);// шукає символ 'а', або стрінги "a" з 5 індекса
         System.out.println(i2);
 
         boolean b = s.startsWith("abc");// чи наченаєть стрінг з вказаное в методі стрінги  true or false
@@ -73,6 +73,19 @@ public final class Lessonstring {
 
         System.out.println(s2.toLowerCase());//повертає всю стрінгу з маленькой букви
         System.out.println(s3.toUpperCase());//повертає всю стрінгу з великой букви
+
+        String s4 = "       ";
+        System.out.println(s4.isBlank());// true якщо стрінг порожній, тобто там пробіли або таби
+
+        String s5 = "";
+        System.out.println(s5.isEmpty());// true якщо в стрінзі зовсім нічого не має  "навіть пробілів"
+
+        s4.strip(); // такий же як trim тільки кращи /також вертає той же обєкт якщо нічого не робить
+
+        s4.stripLeading(); // видаляє пробіли таби спереду
+
+        s4.stripTrailing(); // видаляє пробіли таби позаду
+
 
     }
 
