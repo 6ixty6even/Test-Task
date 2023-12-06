@@ -1,32 +1,41 @@
 package tests;
 
 import basses.TestInit;
+import pageObject.HomePage;
 import pageObject.SignInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
 public class Tests extends TestInit {
+
     SignInPage signInPage = new SignInPage(driver);
 
+    HomePage homePage = new HomePage(driver);
+
+//    @Test
+//    void cheekSignIn() {
+//
+//        signInPage.navigate();
+//        signInPage.getEmailField().sendKeys("");
+//        signInPage.getBtncontinue().click();
+//        signInPage.getPsssword().sendKeys("");
+//        signInPage.getLoginBtn().click();
+//
+//        Assert.assertTrue(signInPage.getHelloLudwig().isDisplayed());
+//    }
+
     @Test
-    void cheekSignIn() {
+    public void cheekSingInBtn() {
+        signInPage.planetaKino();
 
-        signInPage.navigate();
-        signInPage.getEmailField().sendKeys("drenotar@gmail.com");
-        signInPage.getBtncontinue().click();
-        signInPage.getPsssword().sendKeys("149DFGUM3750k");
-        signInPage.getLoginBtn().click();
-
-        Assert.assertTrue(signInPage.getHelloLudwig().isDisplayed());
+        Assert.assertTrue(signInPage.signInBtn().isDisplayed());
     }
-
-    @Test
-    void cheekSingInWitWrongEmail(){
-        signInPage.navigate();
-        signInPage.getEmailField().sendKeys("wrongjkvgdkjg");
-        signInPage.getBtncontinue().click();
-
-        Assert.assertTrue(signInPage.getErrorBtn().isDisplayed());
-    }
+//
+//    @Test
+//    void ChangeRegion() {
+//        signInPage.goToAmazon();
+//        homePage.getChangeRegionBtn().click();
+//
+//    }
 }

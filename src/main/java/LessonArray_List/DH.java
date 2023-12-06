@@ -16,5 +16,4 @@ public class DH {// Не дає повторюватися стрінгам і �
         System.out.println(Al);
         return Al;
     }
-
 }
